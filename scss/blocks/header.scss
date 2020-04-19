@@ -1,0 +1,28 @@
+header{
+    position: relative;
+    overflow: hidden;
+    .header-content{
+        position: relative;
+        display: block;
+        margin-left: 37px;
+        position: relative;
+        background: url('../img/header/headerBg.jpg') top left no-repeat;
+        background-size: 102%;
+        background-position-x: -37px;
+        width: 100%;
+        overflow: hidden;
+        box-sizing: border-box;
+        max-width: 1560px;
+        &::after{
+            content: "";
+            background-color: rgba($color: $black, $alpha: 0.4);
+            display: block;
+            position: absolute;
+            z-index: 1;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+        }
+    }
+}
