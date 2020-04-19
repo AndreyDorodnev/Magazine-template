@@ -8,7 +8,7 @@ header{
         position: relative;
         background: url('../img/header/headerBg.jpg') top left no-repeat;
         background-size: 102%;
-        background-position-x: -37px;
+        background-position-x: -33px;
         width: 100%;
         // overflow: hidden;
         box-sizing: border-box;
@@ -158,7 +158,7 @@ header{
             z-index: 2;
             left: -34px;
             transform: rotate(-90deg);
-            top: 77%;
+            top: 693px;
             p{
                 color: $white;
                 font-family: 'Roboto Condensed', sans-serif;
@@ -186,6 +186,30 @@ header{
                     padding-left: 36px;
                 }
             }
+        }
+        //SVG lines style
+        #headerBottom{
+            z-index: 2;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+        
+        #headerBottom path{
+            fill: $red;
+        }
+        
+        #headerLine{
+            position: absolute;
+            z-index: 1;
+            bottom: 0;
+            right: 0;
+            width: 100%;
+        }
+        
+        #headerLine path{
+            fill: #11161d;
+            opacity: 0.8;
         }
     }
 }
