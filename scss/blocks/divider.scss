@@ -7,3 +7,9 @@
     color: $divider-text-color;
     text-transform: uppercase;
 }
+
+@media(max-width:500px){
+    .divider{
+        display: none;
+    }
+}
