@@ -6,14 +6,32 @@ $(document).ready(function(){
     nav:true,
     dots:true,
     navText:[],
+    items:5,
     responsive:{
         0:{
-            items:5,
+            items:1,
+            // loop:true,
+            dots:true,
+            nav:false
+        },
+        500:{
+            items:2,
             loop:true,
             dots:true,
             nav:false
+        },
+        840:{
+            items:4,
+            loop:true,
+            dots:true,
+            nav:false
+        },
+        1490:{
+            items:5,
+            loop:true,
+            dots:false,
+            nav:false 
         }
-
     }
 });
 });
