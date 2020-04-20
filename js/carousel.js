@@ -1,7 +1,8 @@
 $(document).ready(function(){
     $(".slider1").owlCarousel({
-    loop:true,
+    // loop:true,
     margin:0,
+    autoWidth:true,
     nav:true,
     dots:true,
     navText:[],

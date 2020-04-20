@@ -8,18 +8,69 @@
         background-color: $red;
         overflow: hidden;
         max-width: 1560px;
-        .post{
+        h2{
+            color: $white;
+            font-family: 'Merriweather Heavy', arial;
+            font-size: 35px;
+            line-height: 42px;
+            margin-top: 21px;
+            margin-left: 167px;
+            margin-bottom: 42px;
+        }
+        .slider1{
+            margin-bottom: 100px;
+            margin-left: 167px;
+        }
+        .post{ //a
             display: block;
+            max-width: 281px;
+            margin-right: 20px;
+            text-decoration: none;
             .image{
-                max-width: 280px;
+                position: relative;
                 max-height: 192px;
+                overflow: hidden;
                 img{
+                    transition: 0.3s;
                     width: 100%;
                     height: 100%;
                     object-fit: cover;
                 }
+                button{ //plus button
+                    cursor: pointer;
+                    position: absolute;
+                    width: 32px;
+                    height: 30px;
+                    background-color: $red;
+                    right: 8px;
+                    top: 152px;
+                    color: $white;
+                    border: 0;
+                    font-family: 'Roboto', sans-serif;
+                    font-weight: 700;
+                    transition: 0.3s;
+                    &:hover{
+                        background-color: $white;
+                        color: $red;
+                    }
+                }
             }
-
+            p{
+                color: $white;
+                font-family: 'Roboto', sans-serif;
+                font-weight: 400;
+                font-size: 15px;
+                line-height: 25px;
+                margin-top: 12px;
+            }
+            &:hover{  //post hover
+                .image{
+                    img{
+                        transform: scale(1.1);
+                    }
+                }
+            }
         }
     }
 }
+
