@@ -7,7 +7,7 @@ $(document).ready(function(){
     navText:[],
     responsive:{
         0:{
-            items:1,
+            items:5,
             loop:true,
             dots:true,
             nav:false
