@@ -18,5 +18,10 @@ body {
   @include min-max(320px, 1600px, 0px);
 }
 
-
+h2{
+  color: $white;
+  font-family: 'Merriweather Heavy', arial;
+  font-size: 35px;
+  line-height: 42px;
+}
 
