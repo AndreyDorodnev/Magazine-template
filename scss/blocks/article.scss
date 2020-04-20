@@ -3,16 +3,18 @@
     .main-artcile-content{
         position: relative;
         margin-left: 37px;
+        margin-top: -58px;
         background: url('../img/article/articleBg.jpg') bottom left no-repeat;
 
+        clip-path: polygon(0 6%,100% 0, 100% 100%,0 90%);
         article{
             margin-left: 172px;
             display: flex;
             justify-content: space-between;
-            padding-top: 265px;
+            padding-top: 216px;
             max-width: 1179px;
             height: 400px;
-            padding-bottom: 225px;
+            padding-bottom: 355px;
             .title{
                 max-width: 371px;
                 .top-text{
@@ -62,6 +64,24 @@
                 }
             }
         }
-
+        aside{
+            position: absolute;
+            right: -31px;
+            top: 327px;
+            color: #ffffff;
+            text-transform: uppercase;
+            transform: rotate(-90deg);
+            .line{
+                display: block;
+                background-color: $red;
+                width: 30px;
+                height: 4px;
+            }
+            p{
+                font-size: 11px;
+                line-height: 45px;
+                font-weight: 400;
+            }
+        }
     }
 }
