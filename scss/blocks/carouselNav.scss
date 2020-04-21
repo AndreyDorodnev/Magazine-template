@@ -1,4 +1,4 @@
-.slider1{
+.slider1,.slider2{
     .owl-dots{
         width: 100%;
         margin: 0 auto;
@@ -23,8 +23,16 @@
         }
     }
 }
+
+.slider2{
+    .owl-dots{
+        .active{
+            background-color: $red;
+        }
+    }
+}
 @media(max-width:870px){
-    .slider1{
+    .slider1,.slider2{
         .owl-dots{
             right: 0;
         }

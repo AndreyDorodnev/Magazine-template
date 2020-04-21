@@ -53,12 +53,12 @@ $(document).ready(function () {
                 nav: false
             },
             500: {
-                items: 2,
+                items: 3,
                 loop: true,
                 dots: true,
                 nav: false
             },
-            840: {
+            1490: {
                 items: 4,
                 loop: false,
                 dots: true,

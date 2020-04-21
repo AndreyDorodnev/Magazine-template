@@ -7,10 +7,11 @@
         overflow: hidden;
         max-width: 1560px;
         margin-top: -98px;
+        padding-bottom: 73px;
         .slider2{
             padding-top: 148px;
             margin-left: 170px;
-            padding-bottom: 73px;
+            // padding-bottom: 73px;
         }
         .blog-post{
             display: flex;
@@ -19,13 +20,22 @@
             max-width: 380px;
             margin-right: 24px;
             height: 570px;
-            .image{
+            .blog-image{
                 max-width: 100%;
                 max-height: 270px;
+                overflow: hidden;
                 img{
+                    transition: 0.3s;
                     width: 100%;
                     height: 100%;
                     object-fit: cover;
+                }
+            }
+            &:hover{ //blog post hover
+                .blog-image{
+                    img{
+                        transform: scale(1.1);
+                    }
                 }
             }
             h3{
@@ -57,10 +67,13 @@
                 box-sizing: border-box;
                 margin-top: auto;
                 margin-bottom: 0;
+                transition: 0.3s;
                 .author{
+                    transition: inherit;
                     margin-left: 31px;
                     margin-top: 1px;
                     svg{
+                        transition: inherit;
                         width: 11px;
                         height: 11px;
                         fill: $red;
@@ -68,6 +81,7 @@
                         margin-bottom: -2px;
                     }
                     span{
+                        transition: inherit;
                         font-family: 'Merriweather', serif;
                         font-weight: 400;
                         font-size: 12px;
@@ -76,10 +90,12 @@
                     }
                 }
                 .btn{
+                    transition: inherit;
                     width: 56px;
                     height: 56px;
                     background-color: $red;
                     svg{
+                        transition: inherit;
                         display: block;
                         margin-left: 22px;
                         margin-top: 20px;
@@ -88,6 +104,51 @@
                         fill: $white;
                     }
                 }
+                &:hover{
+                    background-color: $red;
+                    .author{
+                        svg{
+                            fill: $white;
+                        }
+                        span{
+                            color: white;
+                        }
+                    }
+                    .btn{
+                        background-color: $white;
+                        svg{
+                            fill: $red;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:870px){
+    .blogs{
+        .blogs-content{
+            .slider2{
+                margin-left: 20px;
+            }
+        }
+    }
+}
+
+@media(max-width:500px){
+    .blogs{
+        .blogs-content{
+            margin-left: 0;
+            padding-bottom: 0px;
+            margin-top: -110px;
+            .slider2{
+                margin: 0 auto;
+                max-width: 310px;
+                margin-bottom: 100px;
+            }
+            .blog-post{
+                max-width: 310px;
             }
         }
     }
