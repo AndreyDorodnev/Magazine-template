@@ -1,6 +1,7 @@
 .bottom{
     position: relative;
     background-color: $bottom-bg-color;
+
     .bottom-content{
         position: relative;
         margin-left: 37px;
@@ -102,7 +103,7 @@
         #banner_bottom{
             z-index: 2;
             position: absolute;
-            bottom: 0;
+            bottom: -1px;
             width: 100%;
         }
         
@@ -120,6 +121,88 @@
         #banner_line path{
             fill: #11161d;
             opacity: 0.8;
+        }
+    }
+}
+
+@media(max-width:1440px){
+    .bottom{
+        .bottom-content{
+            .info{
+                padding-top: 150px;
+            }
+            .left-label{
+                top: auto;
+                bottom: 40%;
+            }
+        }
+    }
+}
+
+@media(max-width:1250px){
+    .bottom{
+        .bottom-content{
+            background-size: auto;
+            background-position-x: 50%;
+            background-position-y: 10%;
+            .info{
+                padding-top: 50px;
+                .label{
+                    font-size: 200px;
+                    margin-left: 90px;
+                }
+                .text{
+                    margin-right: 34px;
+                }
+            }
+            .right-label{
+                right: -132px;
+            }
+            .left-label{
+                left: -90px;
+            }
+        }
+    }
+}
+
+@media(max-width:770px){
+    .bottom{
+        .bottom-content{
+            .info{
+                padding-bottom: 170px;
+                .label{
+                    margin: 0 auto;
+                    padding-left: 40px;
+                    font-size: 100px;
+                    .underline{
+                        width: 98px;
+                    }
+                }
+                .text{
+                    padding-left: 40px;
+                    .title{
+                        font-size: 22px;
+                        line-height: 24px;
+                    }
+                }
+            }
+            .right-label, .left-label{
+                display: none;
+            }
+        }
+    }
+}
+
+@media(max-width:500px){
+    .bottom{
+        .bottom-content{
+            margin-left: 0;
+            .info{
+                padding-bottom: 80px;
+                .label,.text{
+                    padding-left: 20px;
+                }
+            }
         }
     }
 }
