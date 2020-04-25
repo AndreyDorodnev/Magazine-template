@@ -121,3 +121,105 @@ footer{
         }
     }
 }
+
+@media(max-width:1390px){
+    footer{
+        .footer-content{
+            .info{
+                margin-right: 30px;
+            }
+            .contacts{
+                form{
+                    margin-right: 20px;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:1150px){
+    footer{
+        .footer-content{
+            margin-left: 37px;
+            flex-direction: column;
+            align-items: center;
+            padding-bottom: 100px;
+            .info{
+                width: 70vw;
+                max-width: 100%;
+                margin: 0 auto;
+                margin-bottom: 60px;
+                p{
+                    text-align: center;
+                }
+            }
+            .contacts{
+                max-width: 540px;
+            }
+        }
+    }
+}
+
+@media(max-width:660px){
+    footer{
+        .logo{
+            display: none;
+        }
+    }
+}
+
+@media(max-width:560px){
+    footer{
+        .footer-content{
+            .info{
+                margin-bottom: 20px;
+            }
+            .contacts{
+                flex-direction: column;
+                align-items: center;
+                .social{
+                    margin-top: 10px;
+                    margin-bottom: 30px;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:500px){
+    footer{
+        .footer-content{
+            margin-left: 0;
+            .info{
+                margin: 0 auto;
+            }
+            .contacts{
+                form{
+                    margin: 0 auto;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:370px){
+    footer{
+        .footer-content{
+            .contacts{
+                form{
+                    label{
+                        text-align: center;
+                    }
+                    #email{
+                        width: 100%;
+                    }
+                    button{
+                        right: 0;
+                        border-bottom-right-radius: 0;
+                        border-top-right-radius: 0;
+                    }
+                }
+            }
+        }
+    }
+}
